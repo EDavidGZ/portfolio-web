@@ -1,0 +1,38 @@
+.footer {
+    margin: 0;
+    padding-left: 55rem;
+}
+
+@media screen and (max-width: 1024px) {
+    .footer {
+        margin: 0;
+        padding-left: 24rem;
+    }
+    
+  }
+  
+  /* ++++++++++++ MEDIA QUERIS(small) ++++++++++++ */
+  
+  @media screen and (max-width: 600px) {
+    .footer {
+        margin: 0;
+        padding-left: 11rem;
+    }
+  }
+
+ /*============================ icons =========================================0*/
+
+
+ .icons-a  {
+    margin-top: 10rem;
+    font-size: 3rem;
+    color: var(--icons);
+    
+}
+.icons-a a {
+  margin-left: 2rem;
+}
+
+.icons-a a:hover {
+  color: var(--icons-active);
+}  

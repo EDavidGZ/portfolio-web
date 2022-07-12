@@ -1,0 +1,105 @@
+.contact {
+    display: grid;
+}
+
+ h1, h2 {
+    padding: 0%;
+    margin: 0;
+    
+    color: var(--letter);
+    text-align: center;
+}
+h1 { 
+    padding-top: 2rem;
+     font-size: 2rem;
+    
+    }
+
+h2 {
+    font-size: 2.7rem;
+    padding-top: 1rem;
+    color: var(--letter2);
+}
+.container.contact__container {
+    width: 80%;
+    display: grid;
+    margin-top: 5%;
+    gap: 12%;
+}
+.contact__options {
+    display: flex;
+    flex-direction: row;
+    gap: 1.2rem;
+
+}
+
+.contact__option {
+    width: 120%;
+    background: var(--color-secundary);
+    padding: 1.2rem;
+    border-radius: 1.2rem;
+    text-align: center;
+    border: 1px solid transparent;
+    transition: var(--transition);
+    height: 30vh;
+}
+
+
+
+a {
+    text-decoration: none;
+    color: var(--black);
+}
+
+.contact__option:hover {
+    background: transparent;
+    border-color: var(--color-three);
+}
+.contact__option-icon {
+    font-size: 1.rem;
+    margin-bottom: 0-5rem;
+}
+
+
+
+
+
+
+
+
+
+/* ++++++++++++ MEDIA QUERIS(medium) ++++++++++++ */
+
+  /* ++++++++++++ MEDIA QUERIS(medium) ++++++++++++ */
+
+  @media screen and (max-width: 1024px) {
+    .contact__options {
+        display: flex;
+        flex-direction: column;
+        gap: 1.2rem;
+    
+    }
+
+    .contact__option {
+        width: 90%;
+        height: 30vh;
+    }
+
+    
+  }
+  
+  /* ++++++++++++ MEDIA QUERIS(small) ++++++++++++ */
+  
+  @media screen and (max-width: 600px) {
+    .contact__options {
+        display: flex;
+        flex-direction: column;
+        gap: 1.2rem;
+    
+    }
+    .contact__option {
+        width: 90%;
+        height: 30vh;
+    }
+    
+  }

@@ -1,38 +1,71 @@
-.App {
-  text-align: center;
+:root
+{
+    --color-primary: #9066D4;
+    --color-primary-vaiant: #1f51412e;
+    --color-secundary : #4e2731cb;
+    --color-three : #00988D;
+    --fondo: linear-gradient(to right top, #2a1421, #281526, #26172a, #22192e, #1c1b32, #161f37, #0d243b, #02283d, #002f40, #003540, #003b40, #0f413e);
+    --fondo1: url(img/bg-texture.png);
+    --fondo2: #ff000018;
+    --icons: #346A7D;
+    --icons-active: #44A1C0;
+    --letter : #FEFEDF;
+    --letter2: rgba(13, 11, 11, 0.889) ;
+    --blueCard : #DDF8FE;
+    --purple: rgb(238 210 255);
+    --boxShadow : 0px 19px 60px rgb(0 0 0 / 8%);
+    --smboxShadow: -79px 51px 60px rgba(0, 0, 0, 0.08);
+    --transition: all 400ms ease ;
+     --container-width-ms: 90%;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+  background: var(--fondo);
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+section {
+  height: 100vh;
+}
+@media screen and (max-width: 1024px) {
+  section {
+    height: 200vh;
   }
 }
+.container {
+  width: var(--container-width-ms);
+  margin: 0 auto;
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+
+.App{
+    padding: 0.5rem 3.5rem;
+    overflow: hidden;
+    color: var(--black);    
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+
+.button {
+    background: linear-gradient(180deg, #dbb5369f 26.71%, #fb982f 99.36%);
+    box-shadow: 0px 20px 24px 3px rgba(251, 161, 40, 0.42);
+    border-radius: 34px;
+    border: none;
+    color: white;
+    font-size: 16px;
+    padding: 11px 26px 11px 26px;
   }
-  to {
-    transform: rotate(360deg);
+  
+  .button:hover {
+    background: white;
+    cursor: pointer;
+    border: 1px solid var(--orange);
+    color: var(--orange);
   }
-}
+
+
+  @media screen and (max-width: 480px) {
+    .App {
+      padding: 0.5rem 1rem;
+
+    }
+  }
+
+  
