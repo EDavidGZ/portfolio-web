@@ -99,8 +99,10 @@
       grid-template-rows: repeat(2, 1rf);
     }
     .card {
-        width: 60%;
+        width: 80%;
         height: 35vh;
+        margin-left: 1rem;
+
         
     }
   }

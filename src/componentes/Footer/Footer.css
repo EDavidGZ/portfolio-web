@@ -16,8 +16,14 @@
   @media screen and (max-width: 600px) {
     .footer {
         margin: 0;
-        padding-left: 11rem;
+        padding-left: 5rem;
     }
+    .icons-a  {
+      margin-top: 10rem;
+      font-size: 2rem;
+      color: var(--icons);
+      
+  }
   }
 
  /*============================ icons =========================================0*/

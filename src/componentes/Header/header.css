@@ -167,4 +167,28 @@ span {
       grid-template-columns: none;
       grid-template-rows: repeat(2, 1rf);
     }
+    span {
+      font-size: 4rem;
+      position: absolute;
+    }
+    h3 {
+      font-size: 2rem;
+      color: var(--color-three);
+      padding-top: 0;
+      margin: 0;
+    }
+   h5{
+      margin: 0%;
+      font-size: 1rem;
+      color: var(--letter);
+      padding-bottom: 2rem;
+   } 
+
+   .about__me {
+    margin-left: 4.4rem;
+    height: 100vh;
+    width: 80%;
   }
+
+  }
+  
