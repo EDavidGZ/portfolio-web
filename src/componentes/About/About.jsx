@@ -1,6 +1,6 @@
 import React from 'react'
 import './About.css'
-import Resume from './cv..pdf';
+import Resume from './cv.profesional.pdf';
 import {BsFront} from 'react-icons/bs'
 import {AiFillCodepenCircle} from 'react-icons/ai'
 import {BiCheck} from 'react-icons/bi'

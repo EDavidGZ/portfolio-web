@@ -4,6 +4,7 @@ import Encrip from "../../img/encrip.png";
 import Vyc from "../../img/vyc.png";
 import Note from "../../img/note.png";
 import Car from "../../img/car.png";
+import Clima from "../../img/clima.png";
 
 
 const Portfolio = () => {
@@ -37,6 +38,22 @@ const Portfolio = () => {
             <button className='button1'>to go</button>
           </a>
           <a href="https://github.com/EDavidGZ/charlyventanas">
+            <button className='button1'>github</button>
+          </a>
+
+          </div>
+
+
+
+      </article>
+      <article className='card2'>
+          <img src={Clima} alt="" className='img-port'/>
+          <div className='bot'>
+
+          <a href="https://edavidgz.github.io/clima/">
+            <button className='button1'>to go</button>
+          </a>
+          <a href="https://github.com/EDavidGZ/clima">
             <button className='button1'>github</button>
           </a>
 

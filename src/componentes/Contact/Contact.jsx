@@ -8,7 +8,6 @@ const Contact = () => {
   return (
     <section id='contact' className='contact'>
       
-        <h1>Get In Touch</h1>
        <h2>Contact Me</h2>
       
       
