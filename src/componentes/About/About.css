@@ -93,16 +93,7 @@
   /* ++++++++++++ MEDIA QUERIS(small) ++++++++++++ */
   
   @media screen and (max-width: 600px) {
-    .content {
-      display: grid;
-      grid-template-columns: none;
-      grid-template-rows: repeat(2, 1rf);
-    }
-    .card {
-        width: 80%;
-        height: 35vh;
-        margin-left: 1rem;
-
-        
+    #about{
+        height: 150vh;
     }
   }

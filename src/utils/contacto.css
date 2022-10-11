@@ -1,0 +1,27 @@
+.cd1{
+    width: 70%;
+    padding-left: 2rem;
+    padding-top: 2rem;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    height: 80vh;
+    background: var(--color-primary-vaiant);
+    border-radius: 5%;
+    margin-top: 2rem;
+    margin: 0 auto;
+}
+.form-p{
+    color: var(--purple);
+}
+.btn-success{
+    background: var(--color-three);
+    transition: var(--transition);
+}
+.btn-success:hover{
+    background: var(--fondo);
+    transition: var(--transition);
+}
+.form-control{
+    width: 90%;
+}

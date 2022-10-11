@@ -5,6 +5,9 @@ import About from './componentes/About/About'
 import Portfolio from './componentes/Portfolio/Portfolio';
 import Contact from './componentes/Contact/Contact'
 import Footer from './componentes/Footer/Footer'
+import AOS from 'aos';
+import 'aos/dist/aos.css'; 
+AOS.init();
 
 
 function App() {

@@ -9,9 +9,9 @@ const Header = () => {
   return (
     <section id='header' className='contenedor'>
 
-      <div className='primary'>
+      <div className='primary' data-aos="fade-right">
         <div className='l'>
-          <span className="border">Hy! I Am</span>
+          <span className="border1">Hy! I Am</span>
           <span className="wave">Hy! I Am</span>
         </div>
         <h3>Efren Garza</h3>
@@ -32,7 +32,7 @@ const Header = () => {
       <div>
        
       <div>
-            <div className="about__me">
+            <div className="about__me" data-aos="fade-left">
                 <div className="about__me-image">
                    <img src={me} alt="" className='me '/>
                 </div>

@@ -1,129 +1,148 @@
 .portfolio1 {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
+  display: flex;
+  flex-direction: column;
+  height: 85vh;
+  width: 70%;
+  background: var(--fondo1);
+  margin: 0 auto;
+  padding-top: .7rem;
 }
 
+#portfolio {
+  height: 130vh;
+}
 
 .card2 {
-    width: 80%;
-    height: 30vh;
-    background: var(--color-primary);
-    margin-top: 1rem;
-    left: 2rem;
-    padding: 1.1rem;
-    border-radius: 1.2rem;
-    text-align: center;
-    border: 1px solid transparent;
-    transition: var(--transition);
-    position: relative;
-    display: grid;
-    grid-template-rows: repeat(2, 1fr);
+  width: 90%;
+  height: 20vh;
+  left: 2rem;
+  padding-bottom: 1rem;
+  text-align: center;
+  border: 1px solid transparent;
+  transition: all 300ms ease;
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  border-bottom: solid 1px white;
 }
+.card2:hover {
+  width: 90%;
+  height: 21vh;
+  left: 2rem;
+  margin-top: .5rem;
+  padding-bottom: .8rem;
+}
+
+
 .img-port {
-    margin: 0px;
-    padding: 0px;
-    left: 2rem;
-    padding-top: 1rem;
-    width: 90%;
-    height: 22vh;
+  margin: 0px;
+  padding: 0px;
+  left: 2rem;
+  padding-top: 1rem;
+  width: 40%;
+  padding-bottom: 1.8rem;
+  height: 22vh;
 }
 
 
 /*======================= button =====================00000*/
-  .bot {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      gap: 2rem;
-  }
+.bot {
+  width: 100%;
+  justify-content: flex-start;
+  text-align: start;
+  margin-left: -9rem;
+}
 
-.button1 {
-    background: linear-gradient(180deg, var(--icons) 26.71%, var(--icons) 99.36%);
-    border-radius: 10px;
-    border: none;
-    color: white;
-    font-size: 16px;
-    padding: 11px 26px 11px 26px;
-    margin-top: 1rem;
-    margin-bottom: 2rem;
-    width: 100%;
-    
-  }
-  
-  .button1:hover {
-    background: transparent;
-    border: 1px solid var(--letter2);
-    cursor: pointer;
-  }
-
-
-  /* ++++++++++++ MEDIA QUERIS(medium) ++++++++++++ */
+.title3{
+  color: var(--letter);
+  margin-top: 1rem;
+  font-size: 1.5rem;
+}
+.about3{
+  color: var(--purple);
+}
+/* ++++++++++++ MEDIA QUERIS(medium) ++++++++++++ */
 
 @media screen and (max-width: 1024px) {
-    .portfolio1 {
-      display: grid;
-      grid-template-columns: none;
-      grid-template-rows:  repeat(2, 1rf);
+
+  .img-port {
+    margin: 0px;
+    padding: 0px;
+    left: 2rem;
+    padding-top: 1rem;
+    width: 70%;
+    padding-bottom: 1.2rem;
+    height: 22vh;
     }
-    .img-port {
-      margin: 0px;
-      padding: 0px;
-      padding-top: 0;
+
+    .bot {
       width: 100%;
-  }
-  .card2 {
-    width: 60%;
-    height: 30vh;
-    display: grid;
-    grid-template-columns: none;
-    grid-template-rows:  repeat(2, 1rf);
-  }
-  .bot {
-    display: grid;
-    grid-template-rows: none;
-    grid-template-columns:  repeat(2, 1rf);
-
-  }
-
+      justify-content: flex-start;
+      text-align: start;
+      margin-left: 0rem;
+    }
     
-  }
-  
-  /* ++++++++++++ MEDIA QUERIS(small) ++++++++++++ */
-  
-  @media screen and (max-width: 600px) {
-    .portfolio1 {
-      display: grid;
-      grid-template-columns: none;
-      grid-template-rows: repeat(2, 1rf);
+    .title3{
+      color: var(--letter);
+      margin-top: .8rem;
+      font-size: 1rem;
+    }
+    .about3{
+      color: var(--purple);
     }
 
-    .img-port {
-      margin: 0px;
-      padding: 0px;
-      padding-top: 0;
-      width: 100%;
   }
+/* ++++++++++++ MEDIA QUERIS(small) ++++++++++++ */
+
+@media screen and (max-width: 600px) {
+
+  .img-port {
+    margin: 0px;
+    padding: 0px;
+    padding-top: 0;
+    width: 100%;
+    height: 19vh;
+    padding-right: .5rem;
+  }
+
   .card2 {
     width: 60%;
-    height: 30vh;
     display: grid;
-    grid-template-columns: none;
-    grid-template-rows:  repeat(2, 1rf);
   }
+  .card2:hover {
+    width: 60%;
+    height: 21vh;
+    left: 2rem;
+    margin-top: .5rem;
+    padding-bottom: .8rem;
+  }
+  
+
   .bot {
     display: flex;
 
   }
-  .button1 {
-    background: linear-gradient(180deg, var(--icons) 26.71%, var(--icons) 99.36%);
-    border-radius: 10px;
-    border: none;
-    color: white;
-    font-size: 16px;
-    padding: 11px 26px 11px 26px;
-    margin-left: 1rem;
-    margin-top: 0rem;
-    margin-bottom: 0rem;
-    
+  .portfolio1 {
+    height: 85vh;
+    width: 100%;
+    background: var(--fondo1);
+    margin: 0 auto;
+    padding-top: .7rem;
   }
-    
+  
+  .title3{
+    color: var(--letter);
+    margin-top: .8rem;
+    font-size: 1rem;
   }
+  .about3{
+    color: var(--purple);
+    padding-left: 1rem;
+    margin-right: -2rem;
+  }
+  .bot {
+    padding-left: .5rem;
+    width: 150%;
+    margin-top: 1rem;
+  }
+}

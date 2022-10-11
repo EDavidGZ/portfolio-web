@@ -1,6 +1,6 @@
 import React from 'react'
 import './About.css'
-import Resume from './cv.profesional.pdf';
+import Resume from './Cv.pdf';
 import {BsFront} from 'react-icons/bs'
 import {AiFillCodepenCircle} from 'react-icons/ai'
 import {BiCheck} from 'react-icons/bi'
@@ -10,7 +10,7 @@ const About = () => {
   return (
     <section id='about' className='content'>
 
-      <div className='awes'>
+      <div className='awes' data-aos="fade-right">
         <h1 className='sub'>My Awesome</h1>
         <h2 className='sub2'> services</h2>
         <h5 className='sub3'>With experience in different programming languages ​​and frameworks.</h5>
@@ -21,7 +21,7 @@ const About = () => {
         </a>
       </div>
 
-      <div className='content1'>
+      <div className='content1' data-aos="fade-up-left">
 
           <article className='card'>
             <BsFront className='card-icon' />
@@ -29,8 +29,8 @@ const About = () => {
               <h6><BiCheck />    HTML</h6>
               <h6><BiCheck />    CSS</h6>
               <h6><BiCheck />    Boostrap</h6>
-              <h6><BiCheck />    Jquery</h6>
               <h6><BiCheck />    JavaScript</h6>
+              <h6><BiCheck />    Threejs</h6>
               <h6><BiCheck />    React</h6>
             </div>
           </article>

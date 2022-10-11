@@ -2,9 +2,7 @@ import React, {useState} from "react";
 import "./nav.css";
 import {AiFillHome} from 'react-icons/ai'
 import {IoMdContact} from 'react-icons/io'
-import {AiFillExperiment} from 'react-icons/ai'
 import {AiFillProject} from 'react-icons/ai'
-import {IoIosPeople} from 'react-icons/io'
 import {SiAboutdotme} from 'react-icons/si'
 
 

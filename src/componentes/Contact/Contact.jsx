@@ -1,40 +1,51 @@
 import React from 'react'
 import './Contact.css'
-import {AiOutlineMail} from 'react-icons/ai'
-import {BsMessenger} from 'react-icons/bs'
-import {AiOutlineWhatsApp} from 'react-icons/ai'
+import { AiOutlineMail } from 'react-icons/ai'
+import { BsMessenger } from 'react-icons/bs'
+import { AiOutlineWhatsApp } from 'react-icons/ai'
+import Contacto from '../../utils/Contacto'
 
 const Contact = () => {
   return (
-    <section id='contact' className='contact'>
-      
-       <h2>Contact Me</h2>
-      
-      
-     <div className='container contact__container'>
-        <div className='contact__options'>
-          <article className='contact__option'>
-          <AiOutlineMail className='contact__option-icon' />
-            <h4>Email</h4>
-            <h5>jgar05202415@gmail.com</h5>
-            <a href="mailto:jgar05202415@gmail.com">Send a message</a>
-          </article >
-          <article className='contact__option'>
-          <BsMessenger className='contact__option-icon'/>
-            <h4>Message</h4>
-            <h5>Daviid G</h5>
-            <a href="https://m.me/daviid.grz">Send a message</a>
-          </article>
-          <article className='contact__option'>
-          <AiOutlineWhatsApp className='contact__option-icon' />
-            <h4>Whatsapp</h4>
-            <h5>2462136643</h5>
-            <a href="https://api.whatsapp.com/send?phone=2462136643">Send a message</a>
-          </article>
-        </div>
-      </div>
+    <>
+      <h2>Contact Me</h2><br />
+      <div className='contenedor'>
+        <Contacto />
+        <section id='contact' className='contact'>
 
-    </section>
+
+          <div className='container contact__container' >
+            <div className='contact__options'>
+              <a href="mailto:jgar05202415@gmail.com">
+                <article className='contact__option' data-aos="fade-up-left">
+                  <AiOutlineMail className='contact__option-icon' />
+                  <h4>Email</h4>
+                  <h5>jgar05202415@gmail.com</h5>
+                  <h5> Send a message</h5>
+                </article >
+              </a>
+              <a href="https://m.me/daviid.grz">
+                <article className='contact__option' data-aos="fade-up-left">
+                  <BsMessenger className='contact__option-icon' />
+                  <h4>Message</h4>
+                  <h5>Daviid G</h5>
+                  <h5> Send a message</h5>
+                </article>
+              </a>
+              <a href="https://api.whatsapp.com/send?phone=2462136643">
+                <article className='contact__option' data-aos="fade-up-left">
+                  <AiOutlineWhatsApp className='contact__option-icon' />
+                  <h4>Whatsapp</h4>
+                  <h5>2462136643</h5>
+                  <h5> Send a message</h5>
+                </article>
+              </a>
+            </div>
+          </div>
+
+        </section>
+      </div>
+    </>
   )
 }
 

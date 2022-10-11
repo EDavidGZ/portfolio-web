@@ -15,7 +15,7 @@
     --purple: rgb(238 210 255);
     --boxShadow : 0px 19px 60px rgb(0 0 0 / 8%);
     --smboxShadow: -79px 51px 60px rgba(0, 0, 0, 0.08);
-    --transition: all 400ms ease ;
+    --transition: all 900ms ease ;
      --container-width-ms: 90%;
 }
 body {
@@ -23,6 +23,7 @@ body {
 }
 section {
   height: 100vh;
+  overflow: hidden;
 }
 @media screen and (max-width: 1024px) {
   section {
@@ -35,7 +36,7 @@ section {
 
 }
 
-
+a{text-decoration: none;}
 .App{
     padding: 0.5rem 3.5rem;
     overflow: hidden;
