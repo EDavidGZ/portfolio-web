@@ -1,52 +1,69 @@
-import React from 'react'
+import React, { Suspense } from 'react'
 import './About.css'
 import Resume from './Cv.pdf';
-import {BsFront} from 'react-icons/bs'
-import {AiFillCodepenCircle} from 'react-icons/ai'
-import {BiCheck} from 'react-icons/bi'
+import { SiPython } from 'react-icons/si'
+import { FaReact } from 'react-icons/fa'
+import { TbBrandJavascript } from 'react-icons/tb'
+import { FaJava } from 'react-icons/fa'
+import { FaNodeJs } from 'react-icons/fa'
+import { GrMysql } from 'react-icons/gr'
+import { SiPostgresql } from 'react-icons/si'
+import { SiGoland } from 'react-icons/si'
+import RobotDance from '../../modelo/RobotDance'
+import Button from '@mui/joy/Button';
+
+
 
 
 const About = () => {
+  const skills = [
+    { id: 1, obj: <SiPython /> },
+    { id: 2, obj: <FaReact /> },
+    { id: 3, obj: <TbBrandJavascript /> },
+    { id: 4, obj: <FaJava /> },
+    { id: 5, obj: <FaNodeJs /> },
+    { id: 6, obj: <GrMysql /> },
+    { id: 7, obj: <SiPostgresql /> },
+    { id: 8, obj: <SiGoland /> },
+    { id: 9, obj: "more.." },
+  ]
+  console.log(skills)
+
   return (
-    <section id='about' className='content'>
+    <section className='container-about'>
 
-      <div className='awes' data-aos="fade-right">
-        <h1 className='sub'>My Awesome</h1>
-        <h2 className='sub2'> services</h2>
-        <h5 className='sub3'>With experience in different programming languages ​​and frameworks.</h5>
+      <div className='sub-container-about'>
+        <div>
+          <h3 className='titleRbt'>About Me</h3>
+          <h5 className='text'>With experience in different programming languages ​​and frameworks.</h5>
+          <h5 className='text'>I love chess and play with my princess</h5>
+          <a href={Resume} download >
+            <Button
+              color="warning"
+              onClick={function () { }}
+              variant="soft"
+            >Download CV</Button>
+          </a>
 
 
-        <a href={Resume} download>
-          <button className="button s-button">Download CV</button>
-        </a>
+        </div>
+        <RobotDance />
       </div>
 
-      <div className='content1' data-aos="fade-up-left">
 
-          <article className='card'>
-            <BsFront className='card-icon' />
-            <div className='sk'>
-              <h6><BiCheck />    HTML</h6>
-              <h6><BiCheck />    CSS</h6>
-              <h6><BiCheck />    Boostrap</h6>
-              <h6><BiCheck />    JavaScript</h6>
-              <h6><BiCheck />    Threejs</h6>
-              <h6><BiCheck />    React</h6>
-            </div>
-          </article>
+      <div>
+        <div className='cardfloting ' >
+          {
+            skills.map(skill => {
+              return (
 
-          <article className='card'>
-            <AiFillCodepenCircle className='card-icon' />
-            <div className='sk'>
-              <h6><BiCheck />    SQL</h6>
-              <h6><BiCheck />    php</h6>
-              <h6><BiCheck />    Nodejs</h6>
-              <h6><BiCheck />    Python</h6>
-            </div>
-          </article>
-
+                <a className='color ' key={skill.id}
+                >{skill.obj}</a>
+              )
+            })
+          }
+        </div>
       </div>
-    
 
     </section>
   )

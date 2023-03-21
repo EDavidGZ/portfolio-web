@@ -1,7 +1,7 @@
 .cd1{
     width: 70%;
-    padding-left: 2rem;
-    padding-top: 2rem;
+    position: relative;
+    padding-top: 4rem;
     margin: 0 auto;
     display: flex;
     flex-direction: column;
@@ -11,8 +11,9 @@
     margin-top: 2rem;
     margin: 0 auto;
 }
+
 .form-p{
-    color: var(--purple);
+    color: var(--letter);
 }
 .btn-success{
     background: var(--color-three);
@@ -24,4 +25,20 @@
 }
 .form-control{
     width: 90%;
+    background: transparent;
+}
+@media screen and (max-width: 1250px) {
+    .cd1{
+        width: 100%;
+        position: relative;
+        padding-top: 4rem;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        height: 80vh;
+        background: var(--color-primary-vaiant);
+        border-radius: 5%;
+        margin-top: 4rem;
+        margin: 0 auto;
+    }
 }

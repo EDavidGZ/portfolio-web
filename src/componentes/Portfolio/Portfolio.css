@@ -1,148 +1,113 @@
-.portfolio1 {
-  display: flex;
-  flex-direction: column;
-  height: 85vh;
-  width: 70%;
+.bodyPort {
   background: var(--fondo1);
-  margin: 0 auto;
-  padding-top: .7rem;
-}
-
-#portfolio {
-  height: 130vh;
-}
-
-.card2 {
-  width: 90%;
-  height: 20vh;
-  left: 2rem;
-  padding-bottom: 1rem;
-  text-align: center;
-  border: 1px solid transparent;
-  transition: all 300ms ease;
-  position: relative;
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  border-bottom: solid 1px white;
-}
-.card2:hover {
-  width: 90%;
-  height: 21vh;
-  left: 2rem;
-  margin-top: .5rem;
-  padding-bottom: .8rem;
-}
-
-
-.img-port {
-  margin: 0px;
-  padding: 0px;
-  left: 2rem;
-  padding-top: 1rem;
-  width: 40%;
-  padding-bottom: 1.8rem;
-  height: 22vh;
-}
-
-
-/*======================= button =====================00000*/
-.bot {
+  overflow: hidden;
+  height: 100vh;
   width: 100%;
-  justify-content: flex-start;
-  text-align: start;
-  margin-left: -9rem;
+  cursor: pointer;
+  position: fixed;
 }
 
-.title3{
-  color: var(--letter);
-  margin-top: 1rem;
-  font-size: 1.5rem;
+
+
+.cardptf {
+  width: 80%;
+  height: 100vh;
+  margin-left: 20rem;
 }
-.about3{
-  color: var(--purple);
+
+
+
+.about-text {
+  width: 50%;
+  margin-left: 6rem;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
-/* ++++++++++++ MEDIA QUERIS(medium) ++++++++++++ */
 
-@media screen and (max-width: 1024px) {
+.swiper {
+  overflow: hidden;
+  left: 20%;
+  width: 40%;
+  height: 100%;
+}
 
-  .img-port {
-    margin: 0px;
-    padding: 0px;
-    left: 2rem;
-    padding-top: 1rem;
-    width: 70%;
-    padding-bottom: 1.2rem;
-    height: 22vh;
-    }
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: transparent;
+  /* Center slide text vertically */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
-    .bot {
-      width: 100%;
-      justify-content: flex-start;
-      text-align: start;
-      margin-left: 0rem;
-    }
-    
-    .title3{
-      color: var(--letter);
-      margin-top: .8rem;
-      font-size: 1rem;
-    }
-    .about3{
-      color: var(--purple);
-    }
+.swiper-slide img {
+  display: block;
+  width: 75%;
+  height: 25%;
+  border-radius: 10px;
+  object-fit: cover;
+  margin: 2rem;
+}
 
+@media screen and (max-width: 1250px) {
+  .swiper-slide img {
+    display: block;
+    width: 50%;
+    height: 25%;
+    border-radius: 10px;
+    object-fit: cover;
   }
-/* ++++++++++++ MEDIA QUERIS(small) ++++++++++++ */
-
-@media screen and (max-width: 600px) {
-
-  .img-port {
-    margin: 0px;
-    padding: 0px;
-    padding-top: 0;
+  .swiper {
+    overflow: hidden;
+    left: -20%;
     width: 100%;
-    height: 19vh;
-    padding-right: .5rem;
+    height: 68%;
   }
-
-  .card2 {
-    width: 60%;
-    display: grid;
-  }
-  .card2:hover {
-    width: 60%;
-    height: 21vh;
-    left: 2rem;
-    margin-top: .5rem;
-    padding-bottom: .8rem;
-  }
-  
-
-  .bot {
-    display: flex;
+  .cardptf {
+    padding-top: 2rem;
+    width: 50%;
+    height: 100vh;
+    margin-left: 20rem;
 
   }
-  .portfolio1 {
-    height: 85vh;
-    width: 100%;
-    background: var(--fondo1);
-    margin: 0 auto;
-    padding-top: .7rem;
-  }
-  
-  .title3{
-    color: var(--letter);
-    margin-top: .8rem;
-    font-size: 1rem;
-  }
-  .about3{
-    color: var(--purple);
-    padding-left: 1rem;
-    margin-right: -2rem;
-  }
-  .bot {
-    padding-left: .5rem;
-    width: 150%;
-    margin-top: 1rem;
+  .about-text {
+    width: 40%;
+    margin-left: 3.3rem;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
   }
 }
+@media screen and (max-width: 650px) {
+  .swiper {
+    overflow: hidden;
+    left: 25%;
+    width: 120%;
+    height: 100%;
+  }
+  .cardptf {
+    padding-top: 2rem;
+    width: 50%;
+    height: 90vh;
+    margin-left: 0rem;
+
+  }
+  .about-text {
+    width: 40%;
+    margin-left: 3.3rem;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  .swiper-slide img {
+    display: block;
+    width: 200px;
+    height: 100px;
+    border-radius: 30px;
+    object-fit: cover;
+    margin: 2rem;
+  }
+  }

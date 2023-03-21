@@ -4,10 +4,10 @@ import {AiFillGithub} from 'react-icons/ai'
 import {AiFillLinkedin} from 'react-icons/ai'
 import {AiFillInstagram} from 'react-icons/ai'
 
-
 const Footer = () => {
   return (
       <footer className='footer' >
+        <img src=" " alt="" />
 
         <div className='icons-a'>
           <a href="https://github.com/EDavidGZ/porfolio.github.io"  className='i'><AiFillGithub /></a>

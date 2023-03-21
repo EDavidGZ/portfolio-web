@@ -1,5 +1,25 @@
 .contact {
     display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    background: var(--fondo1);
+    width: 100%;
+    height: 100vh;
+}
+
+.shark{
+    position: relative;
+    width: 100%;
+    height: 80vh;
+}
+
+.cnct{
+    height: 80vh;
+    display: grid;
+    grid-template-rows: repeat(2);
+}
+
+.ctt2{
+    height: 40vh;
 }
 
  h1, h2 {
@@ -20,18 +40,30 @@ h2 {
     padding-top: 1rem;
     color: var(--letter2);
 }
+
+
+.call-me {
+    width: 100%;
+    height: 30vh;
+    margin-left: 2rem;
+    display: flex;
+    flex-direction:row;
+    gap: 2rem;
+}
+
+.vacio1{
+    height: 20vh;
+}
+
+
+
 .container.contact__container {
     width: 80%;
     display: grid;
     margin-top: 5%;
     gap: 12%;
 }
-.contact__options {
-    display: flex;
-    flex-direction: column;
-    gap: 1.2rem;
 
-}
 
 .contact__option {
     width: 90%;
@@ -73,70 +105,25 @@ a {
   /* ++++++++++++ MEDIA QUERIS(medium) ++++++++++++ */
 
   @media screen and (max-width: 1024px) {
-    .contact__options {
-        display: flex;
-        flex-direction: column;
-        gap: 1.2rem;
-    
-    }
-
-    .contact__option {
+    .contact {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        background: var(--fondo1);
+        padding-top: 3rem;
         width: 100%;
-        height: 30vh;
+        height: 150vh;
     }
-    h1 { 
-        padding: 0%;
-        padding-top: 0rem;
-         font-size: 2rem;
-        margin-top: 0%;
-        margin-bottom: 0%;
+    .shark{
+        position: relative;
+        width: 150px;
+        height: 80vh;
     }
-    
-    h2 {
-        padding: 0;
-        margin: 0%;
-        font-size: 2.7rem;
-        padding-top: 0;
-        color: var(--letter2);
-        margin-top: 0%;
-        margin-bottom: 0%;
-    }
-    
-
-    
-  }
-  
-  /* ++++++++++++ MEDIA QUERIS(small) ++++++++++++ */
-  
-  @media screen and (max-width: 600px) {
-    .contact__options {
+    .call-me {
+        width: 100%;
+        height: 100vh;
+        margin-left: 2rem;
         display: flex;
-        flex-direction: column;
-        gap: 1.2rem;
-    
+        flex-direction:row;
+        gap: 2rem;
     }
-    .contact__option {
-        width: 90%;
-        height: 30vh;
-    }
-    
-    h1 { 
-        padding: 0%;
-        padding-top: 0rem;
-         font-size: 2rem;
-        margin-top: 0%;
-        margin-bottom: 0%;
-    }
-    
-    h2 {
-        padding: 0;
-        margin: 0%;
-        font-size: 2.7rem;
-        padding-top: 0;
-        color: var(--letter2);
-        margin-top: 0%;
-        margin-bottom: 0%;
-    }
-    
-    
   }

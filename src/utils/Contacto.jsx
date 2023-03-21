@@ -2,6 +2,7 @@ import React from 'react'
 import './contacto.css'
 import emailjs from '@emailjs/browser'
 import Swal from 'sweetalert2'
+import Button from '@mui/joy/Button';
 
 
 const Contacto = () => {
@@ -29,9 +30,18 @@ const Contacto = () => {
                 <label  className="form-p">Mensaje</label><br />
                 <textarea className="form-control" id="exampleFormControlTextarea1" rows="3" name='message'></textarea><br />
                 <br />
-                <button  className="btn btn-success">Success</button>
+                <Button
+            color="warning"
+            disabled={false}
+            onClick={function () { }}
+            size="sm"
+            variant="soft"> succes</Button>
 
             </form>
+
+            <div>
+                
+            </div>
         </div>
     )
 }

@@ -1,0 +1,206 @@
+{
+  "accessors": [
+    {
+      "componentType": 5125,
+      "count": 1224,
+      "type": "SCALAR"
+    },
+    {
+      "componentType": 5126,
+      "count": 1196,
+      "max": [
+        1.007843137254902,
+        1.007843137254902,
+        0.99720305110894
+      ],
+      "min": [
+        -1.007843137254902,
+        -1.007843137254902,
+        -0.994953811636158
+      ],
+      "type": "VEC3"
+    },
+    {
+      "componentType": 5126,
+      "count": 1196,
+      "max": [
+        1.7388291998962453,
+        1.7388291998962453,
+        1.001053808372546
+      ],
+      "min": [
+        -1.7388291998962455,
+        -1.7388291998962455,
+        -1.0016972466568046
+      ],
+      "type": "VEC3"
+    },
+    {
+      "componentType": 5126,
+      "count": 1196,
+      "max": [
+        1.0009775171065494,
+        0.0009775171065493637
+      ],
+      "min": [
+        -0.0009775171065493646,
+        -1.0009775171065494
+      ],
+      "type": "VEC2"
+    }
+  ],
+  "asset": {
+    "extras": {
+      "author": "IronEqual (https://sketchfab.com/ie-niels)",
+      "license": "CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)",
+      "source": "https://sketchfab.com/3d-models/sun-from-poly-by-google-67b0952528b2476c9ccd4d2daead9a3e",
+      "title": "Sun from Poly by Google"
+    },
+    "generator": "Sketchfab-12.65.0",
+    "version": "2.0"
+  },
+  "bufferViews": [
+    {
+      "buffer": 0,
+      "byteOffset": 0,
+      "byteLength": 2213
+    }
+  ],
+  "buffers": [
+    {
+      "name": "sun",
+      "byteLength": 2216,
+      "uri": "data:application/octet-stream;base64,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"
+    }
+  ],
+  "materials": [
+    {
+      "doubleSided": true,
+      "name": "lambert2SG",
+      "pbrMetallicRoughness": {
+        "baseColorFactor": [
+          1,
+          0.32,
+          0,
+          1
+        ],
+        "metallicFactor": 0,
+        "roughnessFactor": 0.969948
+      },
+      "emissiveFactor": [
+        0,
+        0,
+        0
+      ],
+      "alphaMode": "OPAQUE"
+    }
+  ],
+  "meshes": [
+    {
+      "name": "Object_0",
+      "primitives": [
+        {
+          "attributes": {
+            "NORMAL": 1,
+            "POSITION": 2,
+            "TEXCOORD_0": 3
+          },
+          "indices": 0,
+          "material": 0,
+          "mode": 4,
+          "extensions": {
+            "KHR_draco_mesh_compression": {
+              "bufferView": 0,
+              "attributes": {
+                "NORMAL": 0,
+                "POSITION": 1,
+                "TEXCOORD_0": 2
+              }
+            }
+          }
+        }
+      ]
+    }
+  ],
+  "nodes": [
+    {
+      "children": [
+        1
+      ],
+      "matrix": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        2.220446049250313e-16,
+        -1,
+        0,
+        0,
+        1,
+        2.220446049250313e-16,
+        0,
+        0,
+        0,
+        0,
+        1
+      ],
+      "name": "Sketchfab_model"
+    },
+    {
+      "children": [
+        2
+      ],
+      "name": "root"
+    },
+    {
+      "children": [
+        3
+      ],
+      "matrix": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        2.220446049250313e-16,
+        1,
+        0,
+        0,
+        -1,
+        2.220446049250313e-16,
+        0,
+        0,
+        0,
+        0,
+        1
+      ],
+      "name": "GLTF_SceneRootNode"
+    },
+    {
+      "children": [
+        4
+      ],
+      "name": "node-0_0"
+    },
+    {
+      "mesh": 0,
+      "name": "Object_4"
+    }
+  ],
+  "scene": 0,
+  "scenes": [
+    {
+      "name": "Sketchfab_Scene",
+      "nodes": [
+        0
+      ]
+    }
+  ],
+  "extensionsRequired": [
+    "KHR_draco_mesh_compression"
+  ],
+  "extensionsUsed": [
+    "KHR_draco_mesh_compression"
+  ]
+}

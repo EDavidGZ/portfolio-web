@@ -1,4 +1,5 @@
 import './App.css';
+import { BrowserRouter, Routes, Route } from "react-router-dom"
 import Header from './componentes/Header/Header';
 import Nav from './componentes/Nav/Nav';
 import About from './componentes/About/About'
@@ -13,12 +14,19 @@ AOS.init();
 function App() {
   return (
    <div>
+     <BrowserRouter>
     <Nav />
-    <Header />
-    <About />
+    <Routes>
+            <Route path="/" element={<Header />} />
+            <Route path="/about" element={<About />} />
+            <Route path="/portfolio" element={<Portfolio />} />
+            <Route path="/contact" element={<Contact />} />
+          </Routes>
+     </BrowserRouter>
+    {/* <About />
     <Portfolio />
     <Contact />
-    <Footer />
+    <Footer /> */}
    </div>
    
   );

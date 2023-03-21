@@ -1,99 +1,146 @@
-.content {
+.container-about {
+    background: var(--fondo);
     display: grid;
     grid-template-columns: repeat(2, 1fr);
 }
 
-.awes {
-    padding-top: 1rem;
-    margin-top: 5rem;
-    margin-left: 4rem;
+.sub-container-about {
+    margin: 2rem;
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    width: 100%;
+    height: 50vh;
 }
 
-.sub {
+.text {
+    color: var(--letter);
     text-align: justify;
-    padding: 0%;
-    margin: 0%;
+    margin: 1rem 0 1rem 0;
 
 }
-.sub2 {
+
+.titleRbt {
     text-align: start;
-    padding: 0%;
-    margin: 0%;
+    color: var(--letter2);
+    margin: 2rem 0 2rem 0;
+    font-size: 2.5rem;
+    font-weight: 600;
+
 }
 
-.sub3 {
+
+
+
+/*===================================*/
+
+.cardfloting {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin-top: 10rem;
+    margin-left: 3rem;
+    width: 80%;
+    cursor: pointer;
+}
+
+.color {
+    color: var(--letter);
+    padding: 1rem;
+    font-size: 3rem;
+}
+
+.color:hover {
     color: var(--letter2);
-    font-size: 1.1rem;
-    padding-top: 1rem;
+    font-size: 3.2rem;
+    cursor: pointer;
 }
 
 /*===================================*/
 
-.content1 {
-    display: grid;
-    grid-template-rows: repeat(2, 1fr);
-}
-
-.card {
-    width: 50%;
-    background: var(--color-primary-vaiant);
-    margin-top: 2rem;
-    margin-left: 5rem;
-    padding: 1.1rem;
-    border-radius: 1.2rem;
-    text-align: center;
-    border: 1px solid transparent;
-    transition: var(--transition);
-    height: 28vh;
-    position: relative;
-    
-}
-
-.sk {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    color: var(--black);
-}
-
-.sk h6 {
-    padding: 1rem;
-    margin: 0%;
-    font-size: 1rem;
-    text-align: justify;
-}
-
-.card:hover {
-    background: var(--fondo1);
-    border-color: var(--color-three);
-    color: aliceblue;
-}
-.card-icon {
-    font-size: 1.7rem;
-    margin-bottom: 0-5rem;
-}
 
 
 /* ++++++++++++ MEDIA QUERIS(medium) ++++++++++++ */
 
 @media screen and (max-width: 1024px) {
-    .content {
-      display: grid;
-      grid-template-columns: none;
-      grid-template-rows:  repeat(2, 1rf);
-    }
-
-    .card {
-        width: 60%;
-        height: 35vh;
-        
+       .text {
+        color: var(--letter);
+        text-align:left;
+        padding-right: 2rem;
+        margin: 1rem 0 1rem 0;
+        font-size: 1rem;
     }
     
-  }
-  
-  /* ++++++++++++ MEDIA QUERIS(small) ++++++++++++ */
-  
-  @media screen and (max-width: 600px) {
-    #about{
-        height: 150vh;
+    .titleRbt {
+        text-align: start;
+        color: var(--letter2);
+        margin: 2rem 0 2rem 0;
+        font-size: 1.5rem;
+        font-weight: 500;
     }
-  }
+    .sub-container-about {
+        margin: 2rem;
+        display: grid;
+        width: 100%;
+        height: 50vh;
+    }
+    .cardfloting {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        margin-top: 2rem;
+        margin-left: 3rem;
+        width: 80%;
+        cursor: pointer;
+    }
+    .color {
+        color: var(--letter);
+        padding: 1rem;
+        font-size: 2rem;
+    }
+    
+}
+
+/* ++++++++++++ MEDIA QUERIS(small) ++++++++++++ */
+
+@media screen and (max-width: 650px) {
+    .text {
+        color: var(--letter);
+        text-align:left;
+        padding-right: 2rem;
+        margin: 1rem 0 1rem 0;
+        font-size: 1rem;
+    }
+    
+    .titleRbt {
+        text-align: start;
+        color: var(--letter2);
+        margin: 2rem 0 2rem 0;
+        font-size: 1.5rem;
+        font-weight: 500;
+    }
+    .container-about {
+        height: 200vh;
+        background: var(--fondo);
+        display: flex;
+        flex-direction: row;
+    }
+    .sub-container-about {
+        margin: 2rem;
+        display: grid;
+        grid-template-rows: repeat(2, 1fr);
+        width: 45%;
+        height: 50vh;
+    }
+    .cardfloting {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        margin-top: 5rem;
+        margin-left:  -2rem;
+        width: 50%;
+        height: 30vh;
+        cursor: pointer;
+    }
+    .color {
+        color: var(--letter);
+        padding: 1rem;
+        font-size: 1.5rem;
+    }
+}

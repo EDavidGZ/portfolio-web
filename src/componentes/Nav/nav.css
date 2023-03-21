@@ -33,8 +33,14 @@ nav a.active {
     color: var(--icons-active);
 }
 
-  @media screen and (max-width: 480px) {
+  @media screen and (max-width: 650px) {
     nav {
-      display: none;
+      padding: 0.5rem 1.5rem;
+      bottom: 3rem;
+      border-radius: 3rem;
+      
     }
- }
+    nav a {
+      padding: 0.9rem;
+      font-size: .9rem;
+    }   }

@@ -1,52 +1,68 @@
-.contenedor {
+
+.container-heigth {
+  background: var(--fondo);
+  display: grid;
+  grid-template-rows: repeat(2);
+}
+
+.container-weather {
+  height: 25vh;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
 }
-.primary {
-  padding-top: 7rem;
-    padding-left: 4rem;
-  
+
+.container-header {
+  height: 75vh;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
 }
 
 
-.l {
-    padding-bottom: 5rem;
+.ct-one {
+  padding-left: 4rem;
+}
+
+.ct-center {
+  padding-bottom: 5rem;
 }
 
 
 span {
-    font-size: 5rem;
-    position: absolute;
-  }
-  
-  .border1 {
-    color: var(--letter);  
-    border: none
-  }
-  
-  .wave {
-    color: var(--color-three);
-    animation: wave 3s ease-in-out infinite;
-    border: none
+  font-size: 5rem;
+  position: absolute;
+}
 
-  }
-  h3 {
-    font-size: 3rem;
-    color: var(--color-three);
-    padding-top: 1rem;
-    margin: 0;
-  }
- h5{
-    margin: 0%;
-    font-size: 1rem;
-    color: var(--letter);
-    padding-bottom: 2rem;
- } 
-  
-  @keyframes wave {
-    0%, 100% {
-      clip-path: polygon(
-        0% 47%,
+.wave2 {
+  color: var(--sand);
+  border: none
+}
+
+.wave {
+  color: var(--sea);
+  animation: wave 3s ease-in-out infinite;
+  border: none
+}
+
+.tl-header {
+  font-size: 3rem;
+  color: var(--sea);
+  padding-top: 1rem;
+  margin: 0;
+  font-weight: 600;
+}
+.subtl {
+  margin: 0%;
+  font-size: 1.6rem;
+  color: var(--sand);
+  padding-bottom: 2rem;
+}
+
+
+@keyframes wave {
+
+  0%,
+  100% {
+    clip-path: polygon(0% 47%,
         10% 48%,
         33% 54%,
         54% 60%,
@@ -54,167 +70,162 @@ span {
         84% 59%,
         100% 52%,
         100% 100%,
-        0% 100%
-      );
-    }
-  
-    50% {
-      clip-path: polygon(0% 60%,
-      15% 65%,
-      34% 66%,
-      51% 62%,
-      67% 50%,
-      84% 45%,
-      100% 46%,
-      100% 100%,
-      0% 100%
-      );
-    }
-  }
-  
-  
-  /*=========================== button ============================================*/
-  .button {
-    background: linear-gradient(180deg, var(--color-three) 26.71%, var(--color-three) 99.36%);
-    box-shadow: 0px 20px 24px 3px rgba(25, 176, 121, 0.42);
-    border-radius: 34px;
-    border: none;
-    color: white;
-    font-size: 16px;
-    padding: 11px 26px 11px 26px;
-    
-  }
-  
-  .button:hover {
-    background: white;
-    cursor: pointer;
-    border: 1px solid var(--orange);
-    color: var(--orange);
+        0% 100%);
   }
 
-  /*============================ figuras =========================================0*/
-
- 
-  .fig {
-    flex: 1;
-    position: relative;
-    
+  50% {
+    clip-path: polygon(0% 60%,
+        15% 65%,
+        34% 66%,
+        51% 62%,
+        67% 50%,
+        84% 45%,
+        100% 46%,
+        100% 100%,
+        0% 100%);
   }
-
-  .me {
-    margin: 0 auto;
-    margin-top: 8%;
-    width: 100%;
-    height: 80vh;
-  }
-  .about__me {
-    height: 60vh;
-    width: 80%;
-  }
-  
-.about__me-image {
-  height: 80vh;
-  width: 80%;
-  margin-top: 3rem;
-  background: var(--fondo2);
-  border-radius: 2rem;
-  overflow: hidden;
-  transition: var(--transition);
-  border-radius: 12rem 12rem 0 0;
-  cursor: pointer;
 }
-.about__me-image:hover {
 
-  background: var(--fondo2);
-	transform: rotateY(180deg);
-  background: var(--fondo1);
+/*-----------------------------------------------------------------*/
+
+.sol {
+  width: 100%;
+}
+
+.palmera {
+  width: 100%;
+}
+
+
+/*============================ icons =========================================0*/
+
+
+.icons-a {
+  font-size: 3rem;
+  color: var(--sea);
 
 }
-  
-  
-  /*============================ icons =========================================0*/
 
-
-.icons-a  {
-    margin-top: 10rem;
-    font-size: 3rem;
-    color: var(--icons);
-    
-}
 .icons-a a {
   margin-left: 2rem;
 }
 
 .icons-a a:hover {
   color: var(--icons-active);
-}  
+}
+
 /* ++++++++++++ MEDIA QUERIS(medium) ++++++++++++ */
 
-  @media screen and (max-width: 1024px) {
-    .contenedor {
-      display: grid;
-      grid-template-columns: none;
-      grid-template-rows:  repeat(2, 1rf);
-    }
-    .about__me {
-      margin-left: 6rem;
-      height: 100vh;
-      width: 80%;
-    }
+@media screen and (max-width: 1024px) {
+  span {
+    font-size: 3rem;
+    position: absolute;
+    margin-bottom: 2rem;
   }
   
-  /* ++++++++++++ MEDIA QUERIS(small) ++++++++++++ */
+  .ct-one {
+    padding-left: 1rem;
+  }
   
-  @media screen and (max-width: 600px) {
-    .contenedor {
-      display: grid;
-      grid-template-columns: none;
-      grid-template-rows: repeat(2, 1rf);
-    }
-    span {
-      font-size: 4rem;
-      position: absolute;
-    }
-    h3 {
-      font-size: 2rem;
-      color: var(--color-three);
-      padding-top: 0;
-      margin: 0;
-    }
-    h5{
-      margin: 0%;
-      font-size: 1rem;
-      color: var(--letter);
-      padding-bottom: 2rem;
-    } 
-
-    .about__me {
-    margin-left: 4.4rem;
+  .ct-center {
+    padding-bottom: 1rem;
+  }
+  .tl-header {
+    font-size: 1.5rem;
+    color: var(--sea);
+    padding-top: 3rem;
+    margin: 0;
+    font-weight: 500;
+  }
+  .subtl {
+    margin: 0%;
+    font-size: 2rem;
+    color: var(--sand);
+    padding-bottom: 3rem;
+  }
+  .container-header {
     height: 100vh;
-    width: 84%;
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(2, 1fr);
   }
-  #header{
-    height: 150vh;
+  .container-weather {
+    height: 30vh;
+    display: grid;
+    grid-template-columns: repeat(2);
   }
+  .sol {
+    width: 100px;
+    height: 100px;
   }
   
-  @media screen and (max-width: 801px) {
-    
-  
-  .about__me-image {
-    background: var(--fondo2);
-    border-radius: 2rem;
-    overflow: hidden;
-    transition: var(--transition);
-    border-radius: 12rem 12rem 0 0;
-    cursor: pointer;
+  .palmera {
+    width: 100px;
+    height: 250px;
   }
-  .about__me-image:hover {
-    
-    background: var(--fondo2);
-    transform: none;
-    background: var(--fondo1);
-    
+}
+
+/* ++++++++++++ MEDIA QUERIS(small) ++++++++++++ */
+
+@media screen and (max-width: 650px) {
+  .container-header {
+    height: 75vh;
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .container-weather {
+    height: 20vh;
+    display: grid;
+    grid-template-columns: repeat(2);
+  }
+  .sol {
+    width: 100px;
+    height: 100px;
+  }
+  
+  .palmera {
+    width: 100px;
+    height: 250px;
+  }
+  span {
+    font-size: 2.5rem;
+    position: absolute;
+    margin-bottom: 2rem;
+  }
+  
+  .ct-one {
+    padding-left: 1rem;
+  }
+  
+  .ct-center {
+    padding-bottom: 1rem;
+  }
+  .tl-header {
+    font-size: 1.5rem;
+    color: var(--sea);
+    padding-top: 3rem;
+    margin: 0;
+    font-weight: 500;
+  }
+  .subtl {
+    margin: 0%;
+    font-size: 1rem;
+    color: var(--sand);
+    padding-bottom: 3rem;
+  }
+  .icons-a {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    font-size: 1rem;
+    color: var(--sea);
+  
+  }
+  
+  .icons-a a {
+    margin-left: 0rem;
   }
   
 }
+
+
