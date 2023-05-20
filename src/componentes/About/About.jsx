@@ -9,6 +9,9 @@ import { FaNodeJs } from 'react-icons/fa'
 import { GrMysql } from 'react-icons/gr'
 import { SiPostgresql } from 'react-icons/si'
 import { SiGoland } from 'react-icons/si'
+import { SiDjango } from 'react-icons/si'
+import { SiSpringboot } from 'react-icons/si'
+import { SiPrisma } from 'react-icons/si'
 import RobotDance from '../../modelo/RobotDance'
 import Button from '@mui/joy/Button';
 
@@ -25,7 +28,9 @@ const About = () => {
     { id: 6, obj: <GrMysql /> },
     { id: 7, obj: <SiPostgresql /> },
     { id: 8, obj: <SiGoland /> },
-    { id: 9, obj: "more.." },
+    { id: 9, obj: <SiDjango /> },
+    { id: 10, obj: <SiSpringboot /> },
+    { id: 11, obj: <SiPrisma /> },
   ]
   console.log(skills)
 
@@ -34,12 +39,11 @@ const About = () => {
 
       <div className='sub-container-about'>
         <div>
-          <h3 className='titleRbt'>About Me</h3>
-          <h5 className='text'>With experience in different programming languages ​​and frameworks.</h5>
-          <h5 className='text'>I love chess and play with my princess</h5>
+          <h3 className='titleRbt'>Know me!</h3>
+          <h5 className='titleRbt'>I know many languages like:</h5>
           <a href={Resume} download >
             <Button
-              color="warning"
+              color="primary"
               onClick={function () { }}
               variant="soft"
             >Download CV</Button>
@@ -47,7 +51,10 @@ const About = () => {
 
 
         </div>
+        <div style={{padding: "3rem"}}>
+
         <RobotDance />
+        </div>
       </div>
 
 

@@ -5,6 +5,7 @@
     --fondo: linear-gradient(to bottom, #cdfefe, #bdfdf0, #b7fbdb, #bcf7c1, #caf0a5, #d3ea93, #dee482, #ebdc73, #efd768, #f4d15e, #f9cb53, #fec44a);
     --fondo1: linear-gradient(to bottom, #20f4e6, #00e6ee, #00d7f1, #00c8f1, #2cb8eb, #17a9e7, #1599e1, #2589d9, #0076d5, #0061cf, #004bc6, #1d32b9);
     --fondo2:  linear-gradient(to bottom, #1b287c, #172375, #131d6e, #0f1867, #0a1360, #09125b, #081156, #071051, #0a134c, #0d1547, #101642, #13183d);
+    --fondo3:    linear-gradient(to bottom, #1a2842, #19253e, #18223b, #172037, #161d34, #181e35, #1b2037, #1d2138, #24273f, #2b2d45, #32334c, #393953);
     --icons: #208cf1;
     --icons-active: #dab653;
     --letter : #ffbb00;
@@ -22,7 +23,7 @@ section {
 }
 
 body{
-  overflow: hidden;
+  overflow-x: hidden;
 }
 a{
   text-decoration: none;

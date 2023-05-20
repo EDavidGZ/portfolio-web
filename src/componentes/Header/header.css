@@ -2,7 +2,7 @@
 .container-heigth {
   background: var(--fondo);
   display: grid;
-  grid-template-rows: repeat(2);
+  grid-template-rows: repeat(8);
 }
 
 .container-weather {
@@ -53,7 +53,7 @@ span {
 .subtl {
   margin: 0%;
   font-size: 1.6rem;
-  color: var(--sand);
+  color: rgb(65, 192, 224);
   padding-bottom: 2rem;
 }
 
@@ -99,20 +99,6 @@ span {
 
 /*============================ icons =========================================0*/
 
-
-.icons-a {
-  font-size: 3rem;
-  color: var(--sea);
-
-}
-
-.icons-a a {
-  margin-left: 2rem;
-}
-
-.icons-a a:hover {
-  color: var(--icons-active);
-}
 
 /* ++++++++++++ MEDIA QUERIS(medium) ++++++++++++ */
 
@@ -169,7 +155,7 @@ span {
 
 @media screen and (max-width: 650px) {
   .container-header {
-    height: 75vh;
+    height: 55vh;
     display: grid;
     width: 100%;
     grid-template-columns: repeat(2, 1fr);
@@ -214,17 +200,7 @@ span {
     color: var(--sand);
     padding-bottom: 3rem;
   }
-  .icons-a {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    font-size: 1rem;
-    color: var(--sea);
-  
-  }
-  
-  .icons-a a {
-    margin-left: 0rem;
-  }
+
   
 }
 

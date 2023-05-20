@@ -3,13 +3,63 @@
     grid-template-columns: repeat(2, 1fr);
     background: var(--fondo1);
     width: 100%;
-    height: 100vh;
+    height: 110vh;
+    overflow: hidden;
 }
 
 .shark{
     position: relative;
     width: 100%;
     height: 80vh;
+}
+
+.url1{
+    font-size: 2rem;
+    color: rgba(255, 0, 0, 0.623);
+}
+.url1:hover{
+    font-size: 2rem;
+    color: red;
+}
+.url2{
+    font-size: 2rem;
+    color: rgba(1, 21, 109, 0.679);
+}
+.url2:hover{
+    font-size: 2rem;
+    color: rgb(1, 21, 109);
+}
+.url3{
+    font-size: 2rem;
+    color: rgba(1, 82, 5, 0.7);
+}
+.url3:hover{
+    font-size: 2rem;
+    color: rgb(1, 82, 5);
+}
+.url4{
+    font-size: 2rem;
+    color: rgba(8, 9, 53, 0.607);
+}
+.url4:hover{
+    font-size: 2rem;
+    color: rgb(8, 9, 63);
+}
+.url5{
+    font-size: 2rem;
+    color: rgba(78, 15, 50, 0.6);
+}
+.url5:hover{
+    font-size: 2rem;
+    color: rgb(78, 15, 50);
+}
+.url6{
+    font-size: 2rem;
+    color: rgb(15, 60, 78 ,0.6);
+}
+.url6:hover{
+    font-size: 2rem;
+    color: rgb(15, 60, 78);
 }
 
 .cnct{
@@ -49,6 +99,7 @@ h2 {
     display: flex;
     flex-direction:row;
     gap: 2rem;
+    margin-top: 2rem;
 }
 
 .vacio1{
@@ -127,3 +178,24 @@ a {
         gap: 2rem;
     }
   }
+  @media screen and (max-width: 700px) {
+    .call-me {
+        width: 100%;
+        height: 30vh;
+        margin-left: 1rem;
+        display: flex;
+        flex-direction:row;
+        gap: 2rem;
+        margin-top: 0rem;
+    }
+    
+
+    .contact {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        background: var(--fondo1);
+        padding-top: 3rem;
+        width: 100%;
+        height: 110vh;
+    }
+}

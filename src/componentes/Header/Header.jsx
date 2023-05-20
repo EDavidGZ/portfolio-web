@@ -1,8 +1,5 @@
 import React, { Suspense } from 'react'
 import './header.css'
-import { AiFillGithub } from 'react-icons/ai'
-import { AiFillLinkedin } from 'react-icons/ai'
-import { AiFillInstagram } from 'react-icons/ai'
 import { Canvas } from 'react-three-fiber'
 import { Palmera } from '../../modelo/Palmera'
 import { OrbitControls } from '@react-three/drei'
@@ -10,6 +7,9 @@ import { Sun } from '../../modelo/Sun'
 import { Cloud } from '../../modelo/Cloud'
 import Button from '@mui/joy/Button';
 import { Link } from 'react-router-dom'
+import About from '../About/About'
+import Portfolio from '../Portfolio/Portfolio'
+import Contact from '../Contact/Contact'
 
 
 
@@ -21,6 +21,8 @@ const Header = () => {
   //npx gltfjsx palmera.gltf
 
   return (
+    <div>
+
     <div className='container-heigth'>
       <div className='container-weather '>
         <div className='container-weather '>
@@ -82,12 +84,6 @@ const Header = () => {
             variant="solid">
             <Link to="/contact" >contact me</Link></Button>
 
-          <div className='icons-a'>
-            <a href="https://github.com/EDavidGZ/porfolio.github.io" ><AiFillGithub /></a>
-            <a href="https://www.linkedin.com/in/efren-garza-9344b1238/"><AiFillLinkedin /></a>
-            <a href="https://www.instagram.com/daviid_1308/"><AiFillInstagram /></a>
-
-          </div>
 
         </div>
 
@@ -113,6 +109,10 @@ const Header = () => {
         </div>
 
       </section>
+    </div>
+      <About />
+      <Portfolio />
+      <Contact />
     </div>
 
   )

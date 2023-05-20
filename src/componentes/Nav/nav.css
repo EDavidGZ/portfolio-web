@@ -35,12 +35,6 @@ nav a.active {
 
   @media screen and (max-width: 650px) {
     nav {
-      padding: 0.5rem 1.5rem;
-      bottom: 3rem;
-      border-radius: 3rem;
-      
+     display: none;
     }
-    nav a {
-      padding: 0.9rem;
-      font-size: .9rem;
-    }   }
+    }
